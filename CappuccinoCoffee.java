@@ -1,19 +1,19 @@
-public class MilkCoffee extends Coffee {
+public class CappuccinoCoffee extends Coffee {
     private String milk;
 
-    public MilkCoffee(String coffee, String sugar, String water, String milk) {
+    public CappuccinoCoffee(String coffee, String sugar, String water, String milk) {
         super(coffee, sugar, water);
         this.milk = milk;
     }
     
-    public MilkCoffee(Coffee coffee, String milk) {
+    public CappuccinoCoffee(Coffee coffee, String milk) {
         super(coffee.getCoffee(), coffee.getSugar(), coffee.getWater());
         this.milk = milk;
     }
     
     @Override
     public String toString() {
-        return "Tasty coffee with milk";
+        return "Tasty cappuccino";
     }
 
     public String getMilk() {
